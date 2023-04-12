@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7E3403"
+    android:contentDescription="@string/appbar_scrolling_view_behavior"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".kotlinders2">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".kotlinders2">
+
+        <Button
+            android:id="@+id/geri1"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="250dp"
+            android:background="@drawable/button"
+            android:text="GERİ"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText,TextSizeCheck,TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="370dp"
+            android:layout_height="156dp"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/rounded_corner"
+            android:padding="15dp"
+            android:text="Bu derste ilk Kotlin programımızı yazdıktan sonra değişken tanımlama ve veri türlerini öğreneceğiz.Kotlin programında program başlangıç noktası main fonksiyonudur. Fonksiyon dışında kalan alanlar ise Root olarak adlandırılır. Bu alanda tanımlanan değişkenler global olarak davranırlar."
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/geri1"
+            tools:ignore="HardcodedText,MissingConstraints,TextSizeCheck" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="371dp"
+            android:layout_height="95dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:srcCompat="@drawable/kotres4"
+            tools:ignore="ContentDescription,MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="370dp"
+            android:layout_height="205dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rounded_corner"
+            android:padding="15dp"
+            android:text="Tüm fonksiyonlar ''fun'' ön eki ile başlarlar, yukarıdaki kod ile main fonksiyonu tanımlandı ve println() komutu ile string konsola basılmış oldu. Kotlin dilinde satır sonlarına '';'' noktalı virgül koymaya gerek yoktur.Değişken tanımlama da ise iki temel yaklaşım vardır. \nBunlardan biri sabit değerli değişkenler için ''val'' ve değişken değrliler için ''var'' ön ekidir."
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4"
+            tools:ignore="ContentDescription,HardcodedText,TextSizeCheck" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="375dp"
+            android:layout_height="169dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            app:srcCompat="@drawable/kotres3"
+            tools:ignore="ContentDescription,MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="370dp"
+            android:layout_height="228dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rounded_corner"
+            android:padding="15dp"
+            android:text="Fonksiyon dışında kalan root alanında tanımlanan değişkenler global'dir ve tüm fonksiyonlarda kullanılabilir.  Yukardaki örnekte görüldüğü üzere val ile tanımlanan değişkenlere sonradan değer atanamaz. var ön ekinde ise atanabilir. Bu bakımdan val Java'daki final terimine karşılık geliyor diyebiliriz. Değişkenlere tür tanımaması '':Int'' şeklinde yapılabileceği gibi atanan değerin türüne göre kotlin derleyicisi bir tür tanımlaması da yapabilmektedir."
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView7"
+            tools:ignore="ContentDescription,HardcodedText,TextSizeCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

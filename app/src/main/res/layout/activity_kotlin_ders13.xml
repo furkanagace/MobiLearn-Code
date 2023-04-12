@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7E3403"
+    android:contentDescription="@string/appbar_scrolling_view_behavior"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".kotlinPage1">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".kotlinders13">
+
+
+        <Button
+            android:id="@+id/geri1"
+            android:layout_width="110dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="250dp"
+            android:background="@drawable/button"
+            android:text="GERİ"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.423"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText,TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="350dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/rounded_corner"
+            android:padding="15sp"
+            android:text="1-Değişkenler (Variables):\n\nDeğişkenler, bir değerin atanabileceği bellek alanlarıdır ve değiştirilebilirler. Değişkenlerin tipi belirtilerek deklare edilebilir ya da türü otomatik olarak belirlenebilir."
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/geri1"
+            tools:ignore="HardcodedText,MissingConstraints,TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="350dp"
+            android:layout_height="160dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/rounded_corner"
+            android:padding="15sp"
+            android:text="2-Değişkenler (Variables):\n\nKotlin'de değişken tanımlamak için ''var'' veya ''val'' anahtar kelimeleri kullanılır. ''var'' değiştirilebilir, ''val'' ise sabit değişkenlerdir ve bir kez atandıktan sonra değiştirilemezler."
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView1"
+            tools:ignore="HardcodedText,MissingConstraints,TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="350dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/rounded_corner"
+            android:padding="15sp"
+            android:text="3-Sabitler (Constants): \n\nSabitler, bir kez atanan değeri değiştiremeyeceğiniz değişkenlerdir. Sabitler ''val'' anahtar kelimesi ile tanımlanır."
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.483"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            tools:ignore="HardcodedText,MissingConstraints,SpUsage,TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="350dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/rounded_corner"
+            android:padding="15dp"
+            android:text="4-Veri Tipleri (Data Types): \n\nKotlin dilinde birçok veri tipi vardır. Örneğin, sayısal veriler için Int, Long, Float, Double; karakter dizileri için String, Boolean tipi gibi."
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            tools:ignore="HardcodedText,MissingConstraints,TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="350dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/rounded_corner"
+            android:padding="15dp"
+            android:text="6-Fonksiyonlar (Functions): \n\nBir işlemi yerine getirmek için kullanılan kod bloklarıdır. Fonksiyonlar, parametreler alabilir ve geri dönüş değerleri olabilir."
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.483"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView16"
+            tools:ignore="HardcodedText,MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="350dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/rounded_corner"
+            android:padding="15dp"
+            android:text="7-Koşullu İfadeler (Conditional Statements): \n\nKodun belirli şartlara göre çalışmasını sağlar. Örneğin, if/else ifadeleri, switch/ifadeleri gibi.
+"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5"
+            tools:ignore="HardcodedText,MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="350dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/rounded_corner"
+            android:padding="15dp"
+            android:text="8-Döngüler (Loops):\n\nBelirli bir koşul sağlandığı sürece tekrarlanan kod bloklarıdır. Örneğin, while ve for döngüleri gibi."
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6"
+            tools:ignore="HardcodedText,MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/rounded_corner"
+            android:padding="15dp"
+            android:text="9-Null Güvenliği (Null Safety): \n\nKotlin, null değerleri işlemek için özel bir yapı sunar. Bu yapı, bir değişkenin null olma ihtimalini işaret eden ''?'' operatörünü içerir. Böylece, null değerler üzerinde işlem yapmaya çalışırken oluşabilecek hatalar önlenir. Ayrıca, ''!!'' operatörüyle de bir değişkenin kesinlikle null olmadığı garanti edilir."
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView7"
+            tools:ignore="HardcodedText,MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/rounded_corner"
+            android:padding="15dp"
+            android:text="10-Kalıtım (Inheritance): \n\nKotlin'de bir sınıfın diğer bir sınıftan özelliklerini ve davranışlarını alması, kalıtım olarak adlandırılır. Kalıtım, bir sınıfın ''open'' anahtar kelimesiyle işaretlenerek, diğer sınıflar tarafından kullanılmasına olanak tanır. Bu sayede, kodun tekrar kullanılabilirliği artar ve kod tekrarından kaçınılır.                 "
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView9"
+            tools:ignore="HardcodedText,MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/rounded_corner"
+            android:padding="15dp"
+            android:text="11-Arayüzler (Interfaces): \n\nKotlin'deki arayüzler, bir sınıfın belirli bir davranışa sahip olması için gerekli olan metotları içeren bir yapıdır. Bir sınıf, birden fazla arayüze uyum sağlayabilir. Arayüzler, özellikle yazılımın modülerleştirilmesinde ve birbirinden bağımsız parçaların bir araya getirilmesinde önemli bir rol oynar.           "
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView10"
+            tools:ignore="HardcodedText,MissingConstraints" />
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:background="@drawable/rounded_corner"
+            android:padding="15dp"
+            android:text="12-Genişletilebilirlik (Extension Functions):\n\nKotlin'de mevcut sınıflara, yeni fonksiyonlar eklemek mümkündür. Böylece, bir sınıfa özgü işlemleri daha kolay ve okunaklı bir şekilde gerçekleştirmek mümkündür. Genişletilebilirlik, kodun tekrar kullanılabilirliğini artırır ve kod yazımını kolaylaştırır.
+"            android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView11"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="2100dp" />
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:background="@drawable/rounded_corner"
+            android:padding="15dp"
+            android:text="13-Lambda İfadeleri (Lambda Expressions):\n\nKotlin'de lambda ifadeleri, bir fonksiyonun gövdesini daha kısa bir şekilde ifade etmek için kullanılır. Lambda ifadeleri, özellikle işlevsel programlama paradigmalarında önemli bir role sahiptir ve programcıların kodu daha anlaşılır ve okunaklı hale getirmelerine yardımcı olur.                "
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView12"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="2300dp" />
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:background="@drawable/rounded_corner"
+            android:padding="15dp"
+            android:text="14-İç İçe Fonksiyonlar (Nested Functions):\n\nKotlin'de bir fonksiyonun içinde tanımlanan başka bir fonksiyondur. İç içe fonksiyonlar, kodun daha modüler ve okunaklı olması için kullanılır. Bu yapı sayesinde, bir fonksiyonun içinde yer alan özel işlemler, başka bir yerde tekrar kullanılmak zorunda kalmaz.                "
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView13"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="2500dp"/>
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="350dp"
+            android:layout_height="280dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/rounded_corner"
+            android:padding="15dp"
+            android:text="15-Sealed Sınıflar (Sealed Classes):\n\nKotlin'de, birbirini tamamlayan sınıf öğelerini tanımlamak için ''sealed'' anahtar kelimesi kullanılır. Sealed sınıflar, kodun daha güvenli ve hatasız olmasını sağlar. Sealed sınıflar, bir üst sınıf içinde birden fazla alt sınıfı gruplandırmak için kullanılır. Bu sayede, alt sınıfların belirli bir davranışa sahip olmaları garanti edilir ve hata ayıklama işlemleri daha kolay hale gelir. Sealed sınıflar, özellikle enum yapısının yetersiz kaldığı durumlarda kullanılır.                "
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.483"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView14"
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="HardcodedText,MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="350dp"
+            android:layout_height="250dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/rounded_corner"
+            android:padding="15dp"
+            android:text="5-Veri tipleri (Data Types):\n\n Kotlin'de temel veri tipleri şunlardır:
+\nByte: 8-bit tamsayı
+\nShort: 16-bit tamsayı
+\nInt: 32-bit tamsayı
+\nLong: 64-bit tamsayı
+\nFloat: 32-bit kayan noktalı sayı
+\nDouble: 64-bit kayan noktalı sayı
+\nBoolean: true/false değerleri
+\nChar: tek bir karakter                "
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            tools:ignore="HardcodedText,MissingConstraints" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

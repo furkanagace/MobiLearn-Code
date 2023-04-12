@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7E3403"
+    android:contentDescription="@string/appbar_scrolling_view_behavior"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".kotlinders10">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".kotlinders10">
+
+        <Button
+            android:id="@+id/geri1"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="250dp"
+            android:background="@drawable/button"
+            android:text="GERİ"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText" />
+
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="370dp"
+            android:layout_height="103dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/rounded_corner"
+            android:padding="15dp"
+            android:text="Bazı durumlarda fonksiyonun başında bir değer olması gerebilir. Bu tür fonksiyonlara eklemeli (extension) fonksiyonlar denir."
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/geri1"
+            tools:ignore="HardcodedText,TextSizeCheck" />
+
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="374dp"
+            android:layout_height="98dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:contentDescription="TODO"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.666"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView25"
+            app:srcCompat="@drawable/kotres29"
+            tools:ignore="ContentDescription,HardcodedText" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="370dp"
+            android:layout_height="82dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/rounded_corner"
+            android:padding="15dp"
+            android:text="fonksiyon çağrılırken önüne Int tipinde bir sayı konulabilir"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView1"
+            tools:ignore="HardcodedText,TextSizeCheck" />
+
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="370dp"
+            android:layout_height="340dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/rounded_corner"
+            android:padding="15dp"
+            android:text="Yukarıda main fonksiyonundan çağrılan extension topla fonksiyonu gösterilmiştir. 9.topla(8) ifadesi 17 döndürürken 17.topla(10) durumuna gelir ve sonuç 27 olarak döner.\nBurada fonksiyon toplama işleminden daha karışık bir işlem seçilebilirdi, örneğin 8 rakamını 9 kere ekrana yaz vb. Extension fonksiyonlar özel işlem durumlarında normal fonksiyonlara göre işleri oldukça kolaylaştırmaktadır.
+
+Infix fonksiyonlar ise daha önceki derslerde anlattığımız in, downto, step gibi sözcük ekleriyle yapılan fonksiyonlardır. Bu fonksiyonlarda program anlaşılırlığını kolaylaştırır. Ayrıca programcının kendi tanımladığı infix fonksiyonlar ile Kotlin çok daha fazla özelleştirilebilir. Infix fonksiyonlar tanımlanırken başına ''infix'' öneki konulur."
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.444"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2"
+            tools:ignore="HardcodedText,TextSizeCheck" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="365dp"
+            android:layout_height="89dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="5dp"
+            android:contentDescription="TODO"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:srcCompat="@drawable/kotres30"
+            tools:ignore="ContentDescription,HardcodedText" />
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="370dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/rounded_corner"
+            android:padding="15dp"
+            android:text="Bu fonksiyonların kullanımı ise şöyledir;"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.428"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView26"
+            tools:ignore="HardcodedText,TextSizeCheck" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="387dp"
+            android:layout_height="78dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.166"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView27"
+            app:srcCompat="@drawable/kotres32"
+            android:contentDescription="TODO"
+            tools:ignore="ContentDescription,HardcodedText" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/rounded_corner"
+            android:padding="15dp"
+            android:text="Kodların tamamına bakacak olursak;"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView6"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="376dp"
+            android:layout_height="162dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="50dp"
+            android:contentDescription="TODO"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView28"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/kotres33"
+            tools:ignore="ContentDescription,HardcodedText" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

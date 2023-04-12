@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7E3403"
+    android:contentDescription="@string/appbar_scrolling_view_behavior"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".kotlinders11">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".kotlinders11">
+
+
+        <Button
+            android:id="@+id/geri1"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="250dp"
+            android:background="@drawable/button"
+            android:text="GERİ"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText,TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="370dp"
+            android:layout_height="136dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/rounded_corner"
+            android:padding="15dp"
+            android:text="Kotlin'de liste kullanımı Java ile nerdeyse aynı, tanımlama yapılırken ArrayList &lt;Tür adı&gt; şeklinde kullanılmaktadır. Oluşturulan listeye add() komutu ile elementler yerleştirilmekte, get(indis) ile elemanlar okunabilmektedir."
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/geri1"
+            tools:ignore="HardcodedText,TextSizeCheck" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="370dp"
+            android:layout_height="138dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView25"
+            app:srcCompat="@drawable/kotres34"
+            android:contentDescription="TODO"
+            tools:ignore="ContentDescription,HardcodedText" />
+
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="370dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/rounded_corner"
+            android:padding="15dp"
+            android:text="Yukarıda string türünde bir liste tanımlanmış ve get metodu ile elemanlar yerleştirilmiş. get(indis, değer) fonksiyonu ile istenilen indise yerleştirme yapılabilir."
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView1"
+            tools:ignore="HardcodedText,TextSizeCheck" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="373dp"
+            android:layout_height="154dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:contentDescription="TODO"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView26"
+            app:srcCompat="@drawable/kotres35"
+            tools:ignore="ContentDescription,HardcodedText" />
+
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="370dp"
+            android:layout_height="99dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/rounded_corner"
+            android:padding="15dp"
+            android:text="Köşeli parantez veya get metodu ile elemanlar okunabilir. Remove komutu ile silinebilir, set komutu ile değeri değiştirilebilir."
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2"
+            tools:ignore="HardcodedText,TextSizeCheck" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="371dp"
+            android:layout_height="86dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:contentDescription="TODO"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView27"
+            app:srcCompat="@drawable/kotres36"
+            tools:ignore="ContentDescription,HardcodedText" />
+
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="370dp"
+            android:layout_height="163dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/rounded_corner"
+            android:padding="15dp"
+            android:text="contains ile belirtilen değişkenin listede olup olmadığı kontrol edilebilir. Listeye değer atanıp atanmadı ise isEmpty komutu ile gerçekleştirilebilir.
+\n\nArraylist içindeki elemanlar for yada foreach döngüsü ile alınabilir;"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.454"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView6"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="372dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView28"
+            app:srcCompat="@drawable/kotres37"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="370dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/rounded_corner"
+            android:padding="15dp"
+            android:text="Tüm Kodlar;"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView7"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/imageView34"
+            android:layout_width="373dp"
+            android:layout_height="311dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="50dp"
+            android:contentDescription="TODO"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView29"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/kotres38"
+            tools:ignore="ContentDescription,HardcodedText" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

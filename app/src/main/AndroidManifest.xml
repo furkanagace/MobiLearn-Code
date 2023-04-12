@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MobiLearnCode"
+        tools:targetApi="31">
+        <activity
+            android:name=".social"
+            android:exported="false" />
+        <activity
+            android:name=".kotlinDers13"
+            android:exported="false" />
+        <activity
+            android:name=".sinav3"
+            android:exported="false" />
+        <activity
+            android:name=".sinav2"
+            android:exported="false" />
+        <activity
+            android:name=".sinav1"
+            android:exported="false" />
+        <activity
+            android:name=".kotlinPage2"
+            android:exported="false" />
+        <activity
+            android:name=".kotlinders12"
+            android:exported="false" />
+        <activity
+            android:name=".kotlinders11"
+            android:exported="false" />
+        <activity
+            android:name=".kotlinders10"
+            android:exported="false" />
+        <activity
+            android:name=".kotlinders9"
+            android:exported="false" />
+        <activity
+            android:name=".kotlinders8"
+            android:exported="false" />
+        <activity
+            android:name=".kotlinders7"
+            android:exported="false" />
+        <activity
+            android:name=".kotlinders6"
+            android:exported="false" />
+        <activity
+            android:name=".kotlinders5"
+            android:exported="false" />
+        <activity
+            android:name=".kotlinders4"
+            android:exported="false" />
+        <activity
+            android:name=".kotlinders3"
+            android:exported="false" />
+        <activity
+            android:name=".kotlinders2"
+            android:exported="false" />
+        <activity
+            android:name=".kotlinders1"
+            android:exported="false" />
+        <activity
+            android:name=".kotlinPage2"
+            android:exported="false"
+            tools:ignore="DuplicateActivity" />
+        <activity
+            android:name=".kotlinPage1"
+            android:exported="false" />
+        <activity
+            android:name=".AnaPalet"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

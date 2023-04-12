@@ -1,0 +1,109 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#090603"
+    android:padding="15dp"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".social">
+
+
+        <Button
+            android:id="@+id/geritus"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="241dp"
+            android:background="@drawable/geritus"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.25"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="349dp"
+            android:layout_height="1000dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/rounded_corner"
+            android:padding="15dp"
+            android:text="Kotlin Nedir? \nSon yıllarda popülerlik kazanan bir programlama dilidir ve özellikle Android uygulama geliştirme alanında tercih edilmektedir. Kotlin'in popülerliğinin arkasındaki nedenlerden bazıları, Java'ya göre daha modern özelliklere sahip olması, açık kaynaklı bir dil olması, okunaklı ve anlaşılır kod yazmayı sağlaması, hata ayıklama işlemlerinin kolaylığı ve Java ile uyumluluk sağlamasıdır.
+
+\n\nKotlin dili, güvenli ve esnek bir dil olması nedeniyle hataların minimuma indirilmesine yardımcı olur. Kodların okunaklı ve anlaşılır olması, kodu daha kolay bakım yapılabilir hale getirir. Ayrıca, Kotlin dilinde yazılan uygulamalar, hızlı ve yüksek performans sunar. Bunun nedeni, Kotlin dilinin JVM (Java Sanal Makinesi) tarafından desteklenmesi ve doğrudan derlenebilmesidir.
+
+\n\nKotlin, açık kaynaklı bir dil olduğundan, sürekli olarak geliştirilmekte ve güncellenmektedir. Bu nedenle, Kotlin dilinde yazılan uygulamalar, kullanıcılara en son teknolojileri sunma imkanı sağlar.
+
+\n\nKotlin dilinde yazılan uygulamalar, hata ayıklama ve test işlemlerinin de kolaylığından faydalanır. Özellikle Android uygulama geliştirme alanında, Kotlin dilinde yazılan uygulamaların popülerlik kazanmasının nedenlerinden biri, Java diline göre daha az kod yazılması ve daha az hata olasılığıdır.
+
+\n\nSonuç olarak, Kotlin programlama dili, Android uygulama geliştirme alanında oldukça popüler hale gelmiştir ve gelecekte de bu popülerliğini artırması beklenmektedir. Kotlin dilinde yazılan uygulamalar, kod kalitesi, performans, güvenlik ve esneklik açısından birçok avantaj sağlar. Bu nedenle, Kotlin dilinde uygulama geliştirmeyi öğrenmek, programcılar için büyük bir fırsattır.
+\n\nSon olarak uygulama sizlere hem ders oğretip hem derslerin bitiminde kendinizi daha pratik bir şekilde yapılan test sorularla ilerlemenizi detaylı bir şekilde gösteren bir Kotlin Programlama dili ders uygulamasıdır.
+\n\nBaşarılarınızın Devamını diliyorum.
+\nSorularınız olursa bana sosyal mediyadan ulaşabilirsiniz.
+\nFURKAN AĞACE"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/geritus"
+            tools:ignore="ContentDescription,HardcodedText,TextSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/linked"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/linkedln"
+            android:onClick="openLinkedln"
+            app:layout_constraintEnd_toStartOf="@+id/twitter"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            tools:ignore="ContentDescription,HardcodedText,SpeakableTextPresentCheck"
+            android:contentDescription="true" />
+
+        <ImageButton
+            android:id="@+id/twitter"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="60dp"
+            android:background="@drawable/twitter"
+            android:onClick="openTwitter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/linked"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            tools:ignore="ContentDescription,HardcodedText,SpeakableTextPresentCheck"
+            android:contentDescription="true" />
+
+        <ImageButton
+            android:id="@+id/github"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/github"
+            android:onClick="openGithub"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/twitter"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="ContentDescription,HardcodedText,SpeakableTextPresentCheck"
+            android:contentDescription="true" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
